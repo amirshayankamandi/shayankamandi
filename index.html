@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shayan Kamandi — Full-stack Developer & Product Designer</title>
+  <meta name="description" content="Full-stack developer and product designer building fast, scalable websites, SaaS products and growth-focused experiences for businesses.">
+  <meta property="og:title" content="Shayan Kamandi — Full-stack Developer & Product Designer">
+  <meta property="og:description" content="Full-stack developer and product designer building fast, scalable websites, SaaS products and growth-focused experiences for businesses.">
+  <meta name="theme-color" content="#ece7dc">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Vazirmatn:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- custom cursor (desktop only) -->
+<div class="cursor" aria-hidden="true"><div class="cursor__dot"><span class="cursor__label"></span></div></div>
+
+<!-- preloader -->
+<div class="preloader" aria-hidden="true">
+  <div class="preloader__bg">
+    <div class="preloader__top"><span data-bind="name">Shayan Kamandi</span><span>Portfolio © <span class="year"></span></span></div>
+    <div class="preloader__hello"><span id="hello">Hello</span></div>
+    <div class="preloader__count"><span id="count">0</span><small>%</small></div>
+  </div>
+  <div class="preloader__curve"></div>
+</div>
+
+<!-- nav -->
+<header class="nav" data-theme="light">
+  <a class="logo" href="#top" data-cursor-grow aria-label="Shayan Kamandi — home"></a>
+  <div class="nav__status"><i class="dot"></i><span data-bind="availability">Available for work</span></div>
+  <nav class="nav__links" aria-label="Main">
+    <a class="roll" href="#work"><span data-text="Work">Work</span></a>
+    <a class="roll" href="#about"><span data-text="About">About</span></a>
+    <a class="roll" href="#experience"><span data-text="Experience">Experience</span></a>
+    <a class="roll" href="#contact"><span data-text="Contact">Contact</span></a>
+    <span class="nav__time" data-time>--:--</span>
+  </nav>
+  <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<div class="menu" aria-hidden="true">
+  <nav>
+    <a href="#work"><small>01</small>Work</a>
+    <a href="#about"><small>02</small>About</a>
+    <a href="#experience"><small>03</small>Experience</a>
+    <a href="#contact"><small>04</small>Contact</a>
+  </nav>
+  <div class="menu__foot"><span data-bind-href="email" data-bind="email"></span><span data-time>--:--</span></div>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" data-theme="light">
+    <div class="hero__stickers" aria-hidden="true">
+      <div class="sticker s-star"><div class="sticker__in">
+        <svg viewBox="0 0 120 120"><polygon id="starShape" fill="#ff4a1c"/><text x="60" y="72" text-anchor="middle" class="st-text">HI!</text></svg>
+      </div></div>
+      <div class="sticker s-flower"><div class="sticker__in">
+        <svg viewBox="0 0 120 120">
+          <g fill="#c8b9ff"><circle cx="60" cy="24" r="24"/><circle cx="96" cy="60" r="24"/><circle cx="60" cy="96" r="24"/><circle cx="24" cy="60" r="24"/></g>
+          <circle cx="60" cy="60" r="34" fill="#d6ff4d"/>
+          <circle cx="49" cy="55" r="4.5" fill="#0f0f0f"/><circle cx="71" cy="55" r="4.5" fill="#0f0f0f"/>
+          <path d="M47 69q13 14 26 0" stroke="#0f0f0f" stroke-width="5" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div></div>
+      <div class="sticker s-code"><div class="sticker__in"><span class="code-chip"><b>&lt;/&gt;</b> ship_it()</span></div></div>
+      <div class="sticker s-tag"><div class="sticker__in"><span class="tag-pill"><i class="dot"></i>Open to work</span></div></div>
+      <div class="sticker s-badge"><div class="sticker__in">
+        <svg viewBox="0 0 160 160" class="badge">
+          <defs><path id="circ" d="M80 80m-60 0a60 60 0 1 1 120 0a60 60 0 1 1-120 0"/></defs>
+          <circle cx="80" cy="80" r="78" fill="#0f0f0f"/>
+          <text class="badge__text"><textPath href="#circ" textLength="368" lengthAdjust="spacing">DRAG ME AROUND • PLAY WITH ME • </textPath></text>
+          <path d="M80 62v36m0 0l-13-13m13 13l13-13" stroke="#ff4a1c" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div></div>
+    </div>
+
+    <h1 class="hero__title" aria-label="I build and design digital products that grow your business.">
+      <span class="line">I build</span><span class="pill" aria-hidden="true"><i class="pill__bg"></i><svg class="pill__star" viewBox="0 0 100 100"><use href="#starSym"/></svg></span>
+      <span class="line">&amp; design <em>smart</em></span>
+      <span class="line">digital products.</span>
+    </h1>
+
+    <div class="hero__foot">
+      <p class="hero__intro" data-bind="intro"></p>
+      <div class="hero__scroll"><span>Scroll</span><svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 4v16m0 0l-6-6m6 6l6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="hero__meta"><span data-bind="role"></span><span><span data-bind="location"></span> · <span data-time>--:--</span></span></div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <section class="ticker" aria-hidden="true">
+    <div class="ticker__track" id="ticker"></div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work" data-theme="light">
+    <div class="sec-head">
+      <h2 data-reveal>Selected <em>work</em></h2>
+      <p class="sec-head__side" data-fade><span class="mono">(<span id="workCount">05</span>)</span> Products I built and the business results they delivered.</p>
+    </div>
+    <div class="work__list" id="workList"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about" data-theme="light">
+    <p class="mono label" data-fade>(About)</p>
+    <p class="about__text" id="aboutText" data-bind="about"></p>
+
+    <div class="stats" id="stats"></div>
+
+    <div class="services">
+      <h3 class="mono label" data-fade>(What I do)</h3>
+      <div class="services__grid" id="services"></div>
+    </div>
+
+    <div class="stack">
+      <h3 class="mono label" data-fade>(Tools &amp; skills)</h3>
+      <div class="stack__grid" id="stack"></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="exp" id="experience" data-theme="dark">
+    <div class="sec-head">
+      <h2 data-reveal>Where I've <em>been</em></h2>
+      <a class="btn btn--accent" data-bind-resume data-magnetic="0.3" data-cursor-grow download>
+        <span>Download résumé</span>
+        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+    <ul class="rows" id="rows"></ul>
+    <div class="lists" id="lists"></div>
+  </section>
+
+</main>
+
+<!-- CONTACT -->
+<footer class="contact" id="contact" data-theme="orange">
+  <p class="mono label">(Contact)</p>
+  <h2 class="contact__title" id="contactTitle">Let's make something <em>fun</em> together.</h2>
+  <a class="contact__mail" data-bind-href="email" data-cursor="Write" data-magnetic="0.15"><span data-bind="email"></span><svg viewBox="0 0 24 24" width="40" height="40"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+
+  <div class="contact__bar">
+    <ul class="socials" id="socials"></ul>
+    <div class="contact__meta">
+      <span>© <span class="year"></span> <span data-bind="name"></span></span>
+      <span><span data-bind="location"></span> · <span data-time>--:--</span></span>
+      <a class="roll" href="#top"><span data-text="Back to top ↑">Back to top ↑</span></a>
+    </div>
+  </div>
+</footer>
+
+<!-- shared SVG symbols -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs><symbol id="starSym" viewBox="0 0 100 100"><path id="starSymPath" fill="currentColor"/></symbol></defs>
+</svg>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="content.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

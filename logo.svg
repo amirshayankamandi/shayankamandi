@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="34" fill="#ff4a1c"/>
+  <text x="58" y="78" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="800" font-size="56" letter-spacing="-4" fill="#0f0f0f">SK</text>
+  <path d="M96 14l3.2 8.2 8.2 3.2-8.2 3.2L96 37l-3.2-8.4-8.2-3.2 8.2-3.2z" fill="#ece7dc"/>
+</svg>
